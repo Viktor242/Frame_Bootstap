@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Bootstrap сайт</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-rocket-takeoff"></i> Мой сайт
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carousel">Карусель</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#grid">Сетка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accordion">Аккордеон</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <img src="foto/my.jpeg" alt="Гарри Поттер" class="hero-image mb-4">
+            <h1 class="display-4 fw-bold text-white mb-4">🎉 Добро пожаловать!</h1>
+            <p class="lead text-white mb-5">Современный сайт, созданный с помощью Bootstrap</p>
+            <a href="#carousel" class="btn btn-light btn-lg">Начать путешествие</a>
+        </div>
+    </section>
+
+    <!-- Карусель -->
+    <section id="carousel" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">🖼️ Наша карусель</h2>
+            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+                </div>
+                
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="foto/garri-potter.jpg" class="d-block w-100 carousel-image" alt="Гарри Поттер">
+                        <div class="carousel-caption">
+                            <h3>🚀 Гарри Поттер</h3>
+                            <p>Добро пожаловать в мир магии</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="foto/Ron.jpg" class="d-block w-100 carousel-image" alt="Рон Уизли">
+                        <div class="carousel-caption">
+                            <h3>💎 Рон Уизли</h3>
+                            <p>Лучший друг и верный товарищ</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="foto/germona.jpeg" class="d-block w-100 carousel-image" alt="Гермиона">
+                        <div class="carousel-caption">
+                            <h3>⭐ Гермиона Грейнджер</h3>
+                            <p>Самая умная ведьма своего поколения</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сетка -->
+    <section id="grid" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">📱 Наша сетка</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="foto/garri-potter.jpg" class="card-img-top" alt="Гарри Поттер">
+                        <div class="card-body text-center">
+                            <i class="bi bi-phone display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Гарри Поттер</h5>
+                            <p class="card-text">Мальчик, который выжил. Главный герой истории</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="foto/Ron.jpg" class="card-img-top" alt="Рон Уизли">
+                        <div class="card-body text-center">
+                            <i class="bi bi-laptop display-4 text-success mb-3"></i>
+                            <h5 class="card-title">Рон Уизли</h5>
+                            <p class="card-text">Верный друг и храбрый волшебник</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="foto/germona.jpeg" class="card-img-top" alt="Гермиона">
+                        <div class="card-body text-center">
+                            <i class="bi bi-display display-4 text-warning mb-3"></i>
+                            <h5 class="card-title">Гермиона</h5>
+                            <p class="card-text">Умная и находчивая ведьма</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Аккордеон -->
+    <section id="accordion" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">📚 Аккордеон</h2>
+            <div class="accordion" id="infoAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            <img src="foto/garri-potter.jpg" class="accordion-icon me-2" alt="Гарри">
+                            Кто такой Гарри Поттер?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            <p>Гарри Поттер - главный герой серии романов Дж. К. Роулинг. Он мальчик-волшебник, который в возрасте одного года пережил нападение самого могущественного тёмного мага всех времён - Лорда Волан-де-Морта, оставив на лбу шрам в виде молнии.</p>
+                            <p>Гарри известен как "мальчик, который выжил" и является единственным человеком, который когда-либо пережил смертельное заклятие "Авада Кедавра".</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            <img src="foto/Ron.jpg" class="accordion-icon me-2" alt="Рон">
+                            О Роне Уизли
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            <img class="float-end ms-3 mb-2" width="150" alt="Рон Уизли">
+                            <p>Рональд Уизли - лучший друг Гарри Поттера и Гермионы Грейнджер. Он происходит из семьи чистокровных волшебников, известной своими рыжими волосами и большим количеством детей.</p>
+                            <p>Рон известен своей преданностью друзьям, хотя иногда может быть ревнивым и неуверенным в себе. Он отличный игрок в квиддич и играет за команду Гриффиндора.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            <img src="foto/germona.jpeg" class="accordion-icon me-2" alt="Гермиона">
+                            О Гермионе Грейнджер
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            <img class="float-end ms-3 mb-2" width="150" alt="Гермиона Грейнджер">
+                            <p>Гермиона Грейнджер - одна из лучших учениц Хогвартса и лучшая подруга Гарри и Рона. Она происходит из семьи маглов (не-волшебников), что делает её "грязнокровкой" в глазах некоторых.</p>
+                            <p>Гермиона известна своим острым умом, любовью к книгам и способностью находить решения в самых сложных ситуациях. Без неё Гарри и Рон не смогли бы справиться со многими испытаниями.</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+
+            <p class="mb-0 mt-3">&copy; 2025 Мир Гарри Поттера. Создано с ❤️ и Bootstrap</p>
+            <div class="mt-3">
+                <a href="mailto:kamenevvv@yandex.ru" class="text-white text-decoration-none me-3">
+                    <i class="bi bi-envelope me-1"></i>kamenevvv@yandex.ru
+                </a>
+                <a href="https://github.com/Viktor242" target="_blank" class="text-white text-decoration-none">
+                    <i class="bi bi-github me-1"></i>GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
